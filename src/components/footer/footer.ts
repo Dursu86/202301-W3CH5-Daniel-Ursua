@@ -12,7 +12,7 @@ export class Footer extends Component {
   private createTemplate() {
     return `
               <footer class="footer">
-              <img class="footer__img"src="../../pikachu.png" alt="A draw of the Pikachu's face"/>
+              <img class="footer__img"src="../../pikachu.png" alt="A draw of the Pikachu's face"/ width="80px">
               </footer>
     `;
   }
