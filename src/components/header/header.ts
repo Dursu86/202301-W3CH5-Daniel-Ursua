@@ -14,7 +14,7 @@ export class Header extends Component {
             <header class="header">
               <div class="header__logo"><img src="../../pokemon-logo.svg" alt="Pokémon logo"></div>
               <h1 class="header__title> Pokepedia </h1>
-                <p role="note" aria-label="info" class="header__claim">Learn it all!</p>
+                <p class="header__claim">Learn it all!</p>
               <nav class="header_nav">
                 <ul class="menu">
                   <li class="menu__nav">Home</li>
