@@ -13,9 +13,9 @@ export class Card extends Component {
 
   private createTemplate() {
     return `
-            <section class="card">
-              <div class="card__img"><img src="${this.pokemon.img}" alt="" width="200px"></div>
-              <p class="card__name">${this.pokemon.name}</p>
+            <section class="card-section">
+              <div class="card"><img src="${this.pokemon.img}" alt="" width="200px" class="card__img">
+              <p class="card__name">${this.pokemon.name}</p></div>
             </section>
     `;
   }
