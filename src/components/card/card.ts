@@ -1,24 +1,22 @@
 /* eslint-disable no-unused-vars */
+import { PokemonStructure } from '../../models/pokemon';
 import { Component } from '../component/component';
 import './card.scss';
 
 export class Card extends Component {
-  constructor(public selector: string) {
+  constructor(public selector: string, public pokemon: PokemonStructure) {
     super();
     this.template = this.createTemplate();
     this.render('afterend');
+    this.pokemon = { ...pokemon };
   }
 
   private createTemplate() {
     return `
-            <section class="card">
-              <div class="card__img"><img src="" alt="" width="200px"></div>
-              <p class="card__name"></p>
+            <section class="card-section">
+              <div class="card"><img src="${this.pokemon.img}" alt="" width="200px" class="card__img">
+              <p class="card__name">${this.pokemon.name}</p></div>
             </section>
     `;
-  }
-
-  render(place: globalThis.InsertPosition) {
-    super.render(place);
   }
 }
