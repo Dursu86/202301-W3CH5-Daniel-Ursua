@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Pokemon, PokemonStructure } from '../../models/pokemon';
+import { PokemonStructure } from '../../models/pokemon';
 import { Component } from '../component/component';
 import './card.scss';
 
