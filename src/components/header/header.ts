@@ -12,8 +12,7 @@ export class Header extends Component {
   private createTemplate() {
     return `
             <header class="header">
-              <div class="header__logo"><img src="/Users/daniel/Documents/Bootcamp/Challenges/W3CH5/public/pokemon-logo.svg"
-                  alt="Pokémon logo"></div>
+              <div class="header__logo"><img src="../../pokemon-logo.svg" alt="Pokémon logo"></div>
               <h1 class="header__title>${this.title}</h1>
                 <p role="note" aria-label="info" class="header__claim">Learn it all!</p>
               <nav class="header_nav">
