@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { Component } from '../component/component';
-import './header.scss';
+import './footer.scss';
 
-export class Header extends Component {
-  constructor(public selector: string, public title: string = 'Pokepedia') {
+export class Footer extends Component {
+  constructor(public selector: string) {
     super();
     this.template = this.createTemplate();
     this.render('beforeend');
@@ -21,7 +21,3 @@ export class Header extends Component {
     super.render(place);
   }
 }
-
-<footer>
-  <img src="../../pikachu.png" alt="" />
-</footer>;
