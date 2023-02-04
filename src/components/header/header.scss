@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  .&__logo {
+  &__logo {
   }
-  .&__title {
+  &__title {
   }
-  .&__claim {
+  &__claim {
   }
-  .&__nav {
+  &__nav {
   }
 }
 .menu {
@@ -16,7 +16,7 @@
   flex-direction: row;
   gap: 2rem;
   list-style: none;
-  .&__nav {
+  &__nav {
     font-size: 1, 5rem;
   }
 }
