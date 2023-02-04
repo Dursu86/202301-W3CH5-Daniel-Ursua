@@ -14,7 +14,7 @@ export class Footer extends Component {
            <footer>
            <img src="../../pikachu.png" alt="A draw of the Pikachu's face" />
             </footer>
-    `;
+          `;
   }
 
   render(place: globalThis.InsertPosition) {
