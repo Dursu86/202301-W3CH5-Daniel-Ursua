@@ -16,4 +16,8 @@ describe('Given Header component', () => {
     const img = screen.getByRole('img');
     expect(img).toBeInTheDocument();
   });
+  test('It render the card in the document', () => {
+    const p = screen.getByText('Learn it all!');
+    expect(p).toBeInTheDocument();
+  });
 });

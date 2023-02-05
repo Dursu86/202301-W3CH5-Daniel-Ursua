@@ -19,7 +19,6 @@ export class Header extends Component {
                 <ul class="menu">
                   <li class="menu__nav">Home</li>
                   <li class="menu__nav">Favorite list</li>
-                  <li class="menu__nav">Poke details</li>
                 </ul>
               </nav>
             </header>
