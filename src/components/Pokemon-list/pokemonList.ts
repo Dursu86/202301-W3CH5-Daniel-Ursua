@@ -31,9 +31,6 @@ export class PokemonList extends Component {
     <section class="pokemons">
       <ul class="pokemons__grid">
       </ul>
-    <div class="pokemons__nav">
-    <button>anterior</button>
-    <button>siguiente</button>
     </div></section>
     `;
   }

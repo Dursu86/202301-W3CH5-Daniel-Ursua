@@ -7,10 +7,9 @@ export class Card extends Component {
   constructor(public selector: string, public pokemon: PokemonStructure) {
     super();
     this.template = this.createTemplate();
-    this.render('afterbegin');
+    this.render('beforeend');
     this.pokemon = { ...pokemon };
   }
-  // TODO Añadir tests
 
   private createTemplate() {
     return `

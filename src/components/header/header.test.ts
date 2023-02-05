@@ -8,15 +8,15 @@ describe('Given Header component', () => {
     const element = new Header('slot');
     expect(element).toBeInstanceOf(Header);
   });
-  test('It render the card in the document', () => {
+  test('It render the title in the document', () => {
     const h1 = screen.getByRole('heading');
     expect(h1).toBeInTheDocument();
   });
-  test('It render the card in the document', () => {
+  test('It render an image in the document', () => {
     const img = screen.getByRole('img');
     expect(img).toBeInTheDocument();
   });
-  test('It render the card in the document', () => {
+  test('It render this text in the document', () => {
     const p = screen.getByText('Learn it all!');
     expect(p).toBeInTheDocument();
   });
