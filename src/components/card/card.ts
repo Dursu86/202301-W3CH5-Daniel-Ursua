@@ -7,16 +7,15 @@ export class Card extends Component {
   constructor(public selector: string, public pokemon: PokemonStructure) {
     super();
     this.template = this.createTemplate();
-    this.render('afterend');
+    this.render('afterbegin');
     this.pokemon = { ...pokemon };
   }
+  // TODO Añadir tests
 
   private createTemplate() {
     return `
-            <section class="card-section">
-              <div class="card"><img src="${this.pokemon.img}" alt="" width="200px" class="card__img">
-              <p class="card__name">${this.pokemon.name}</p><button>Catch it!</button></div>
-            </section>
+              <li class="card"><img src="${this.pokemon.img}" alt="" width="200px" class="card__img">
+              <p class="card__name">${this.pokemon.name}</p><button>Catch it!</button></li>
     `;
   }
 }
