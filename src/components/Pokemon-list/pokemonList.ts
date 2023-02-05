@@ -4,11 +4,18 @@ import { Card } from '../card/card';
 import { Component } from '../component/component';
 import { PokemonStructure } from '../../models/pokemon';
 import './pokemonList.scss';
+import { PokeRepoApi } from '../../services/repository/pokeRepoApi';
 
 export class PokemonList extends Component {
-  constructor(public selector: string, public pokemonList: PokemonStructure[]) {
+  public pokemonList!: PokemonStructure[];
+  constructor(public selector: string, public pokemonRepo: PokeRepoApi) {
     super();
     this.template = this.createTemplate();
+    this.load();
+  }
+
+  async load() {
+    this.pokemonList = await this.pokemonRepo.getPokemons();
     this.render('afterbegin');
   }
 
