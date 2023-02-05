@@ -1,9 +1,9 @@
 /* eslint-disable no-new */
-import { Card } from './components/card/card';
 import { Footer } from './components/footer/footer';
 import { Header } from './components/header/header';
+import { PokemonList } from './components/Pokemon-list/pokemonList';
 import { POKEMONS } from './mocks/mocks';
 
-new Header('.root');
-new Card('.header', POKEMONS[0]);
-new Footer('.root');
+new Header('main');
+new PokemonList('main', POKEMONS);
+new Footer('main');
