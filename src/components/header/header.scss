@@ -42,7 +42,12 @@
     font-size: 1.8rem;
     text-align: center;
   }
-  &__nav:hover {
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__link:hover {
     color: #ffcd05;
   }
 }

@@ -17,8 +17,8 @@ export class Header extends Component {
                 <p class="header__claim">Learn it all!</p></div>
               <nav class="header__nav">
                 <ul class="menu">
-                  <li class="menu__nav"><a href="#">Home</li>
-                  <li class="menu__nav"><a href="#">Favorite list</li>
+                  <li class="menu__nav"><a href="#" class="menu__link">Home</li>
+                  <li class="menu__nav"><a href="#" class="menu__link">Favorite list</li>
                 </ul>
               </nav>
             </header>
