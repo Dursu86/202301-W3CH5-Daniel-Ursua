@@ -15,7 +15,7 @@ export class Card extends Component {
     return `
             <section class="card-section">
               <div class="card"><img src="${this.pokemon.img}" alt="" width="200px" class="card__img">
-              <p class="card__name">${this.pokemon.name}</p></div>
+              <p class="card__name">${this.pokemon.name}</p><button>Catch it!</button></div>
             </section>
     `;
   }

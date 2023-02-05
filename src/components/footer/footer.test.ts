@@ -7,6 +7,8 @@ describe('Given Footer component', () => {
     document.body.innerHTML = '<slot></slot>';
     const element = new Footer('slot');
     expect(element).toBeInstanceOf(Footer);
+  });
+  test('It render the card in the document', () => {
     const img = screen.getByRole('img');
     expect(img).toBeInTheDocument();
   });
