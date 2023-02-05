@@ -9,5 +9,22 @@
   &__img {
   }
   &__name {
+    text-transform: uppercase;
+    font-family: 'Kalam', cursive;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #2a75bb;
+  }
+  &__button {
+    background-color: red;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    border-color: red;
+  }
+  &__button:hover {
+    background-color: white;
+    color: red;
   }
 }

@@ -6,9 +6,9 @@ export class PokeRepoApi {
     this.url = 'https://pokeapi.co/api/v2/pokemon';
   }
 
-  async getPokemons(): Promise<PokemonStructure[]> {
-    const resp = await fetch(this.url);
-    const data = (await resp.json()).results as { name: string; url: string }[];
+  async getPokemons(url: string = this.url): Promise<PokemonStructure[]> {
+    const resp = await (await fetch(url)).json();
+    const data = resp.results as { name: string; url: string }[];
     return Promise.all(
       data.map(async (poke) => ({
         name: poke.name,

@@ -31,7 +31,7 @@ export class PokemonList extends Component {
     <section class="pokemons">
       <ul class="pokemons__grid">
       </ul>
-    </section>
+    </div></section>
     `;
   }
 }

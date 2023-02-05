@@ -19,3 +19,8 @@ En cualquiera de los listados, el usuario debería poder ir al detalle de un pok
 BEM
 HTML semántico
 Testing
+
+## STOPPERS
+
+Error en el test: Jest worker encountered 4 child process exceptions, exceeding retry limit;
+Previous y next page: No conseguí pasarlo como función a los botones.
